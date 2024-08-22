@@ -14,7 +14,7 @@ function email_template_header_function($atts)
 					<tr>
 						<td align="center" valign="top">
 							<div id="template_header_image" style="background-color: #fff;margin: 0 auto;width: 700px;padding: 20px 0;border-radius: 13px 13px 0 0;border-bottom: 2px solid #091D3E;">
-								<?php $image = site_url(). "/wp-content/uploads/2024/06/32-denti-logo-big.svg";  ?>
+								<?php $image = site_url(). "/wp-content/uploads/2024/08/32-denti-logo-big-scaled.jpg";  ?>
 								<?php
 									echo '<p style="margin-top:0; margin-bottom:0;"><img src="' . esc_url( $image  ) .' "' . get_bloginfo( 'name', 'display' ) . '" style="width: 25%;" /></p>';
 								?>

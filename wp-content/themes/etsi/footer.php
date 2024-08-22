@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <?php $attachment_image = get_field('logo', 'option'); 
-                $logo_array = wp_get_attachment_image_src( $attachment_image['ID'], $logo_full );?>
+                $logo_array = wp_get_attachment_image_src( $attachment_image['ID'], 'full' );?>
                 <h3 class="copyright">Copyright   © <?php echo date('Y'); ?> 32 Denticare. All Rights Reserved.  |  Powered by : <a href="https://www.easternts.com/" target="_blank"> 	Eastern Techno Solutions (I) Pvt. Ltd.</a></h3>
                 <ul class="list-icon-bottom">
                     <li class="bottom-icon-style"><a href="https://www.facebook.com/profile.php?id=100064157880163" target="_blank"><img src="/wp-content/uploads/2024/08/logos_facebook.svg" alt="facebook" loading="lazy"/></a></li>
