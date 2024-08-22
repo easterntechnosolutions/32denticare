@@ -524,3 +524,17 @@ function ah_breadcrumb() {
   
 }
   
+
+add_action('phpmailer_init', 'denti_send_smtp_email');
+function denti_send_smtp_email($phpmailer)
+{
+    $phpmailer->isSMTP();
+    $phpmailer->Host = 'smtp.gmail.com';
+    $phpmailer->Port = '587';
+    $phpmailer->SMTPSecure = 'tls';
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->Username = 'noreplay.denticare@gmail.com';
+    $phpmailer->Password = 'trgbssfcsjrpknof';
+    $phpmailer->From = 'noreplay.denticare@gmail.com';
+    $phpmailer->FromName = '32denticare&implantcenter';
+}

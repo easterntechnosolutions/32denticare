@@ -78,16 +78,3 @@ function email_template_header_function($atts)
     return ob_get_clean();
 }
 
-add_action('phpmailer_init', 'send_smtp_email');
-function send_smtp_email($phpmailer)
-{
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'smtp.gmail.com';
-    $phpmailer->Port = '587';
-    $phpmailer->SMTPSecure = 'tls';
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Username = 'noreplay.denticare@gmail.com';
-    $phpmailer->Password = 'trgbssfcsjrpknof';
-    $phpmailer->From = 'noreplay.denticare@gmail.com';
-    $phpmailer->FromName = '32denticare&implantcenter';
-}
