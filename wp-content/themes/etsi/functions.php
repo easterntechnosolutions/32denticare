@@ -113,10 +113,7 @@ function add_js_footer_function() {
 		
 			wp_enqueue_script( 'jquery-min-js', get_stylesheet_directory_uri() . '/js/jquery.min.js', array('jquery'), null, true );
 			wp_enqueue_script( 'bootstrap-min-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery-min-js'), null, true );
-			wp_enqueue_script( 'jquery-easing', get_stylesheet_directory_uri() . '/js/jquery.easing.js', array('jquery'), null, true );
-			wp_enqueue_script( 'jquery-countto', get_stylesheet_directory_uri() . '/js/jquery-countTo.js', array('jquery'), null, true );
-// 			wp_enqueue_script( 'jquery-validate', get_stylesheet_directory_uri() . '/js/jquery-validate.js', array('jquery'), null, true );
-		
+			
 			wp_enqueue_script( 'rev-slider', get_stylesheet_directory_uri() . '/js/rev-slider.js', array('jquery'), null, true );
 			wp_enqueue_script( 'theme-punch', get_stylesheet_directory_uri() . '/js/revolution/jquery.themepunch.revolution.min.js', array('jquery'), null, true );
 			wp_enqueue_script( 'theme-punch-tools', get_stylesheet_directory_uri() . '/js/revolution/jquery.themepunch.tools.min.js', array('jquery'), null, true );

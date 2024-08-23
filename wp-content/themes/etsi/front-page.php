@@ -19,7 +19,8 @@
                                 <?php if (have_rows('slider_image', 'option')): ?>
                                     <?php while (have_rows('slider_image', 'option')): the_row(); 
                                         $desktop_image = get_sub_field('home_slider_image', 'option');
-                                        $mobile_image = get_sub_field('mobile_image', 'option'); ?>
+                                        $mobile_image = get_sub_field('mobile_image', 'option'); 
+                                        if ($desktop_image && $mobile_image): ?>
                                         <li>
                                             <?php
                                                 $image_id = $desktop_image['id'];
@@ -39,7 +40,7 @@
                                                 }
                                             ?>
                                         </li>
-                                        
+                                        <?php endif; ?>
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </ul>
