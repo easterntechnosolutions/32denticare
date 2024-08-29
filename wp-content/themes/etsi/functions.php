@@ -111,7 +111,7 @@ function add_js_footer_function() {
 	// Load CSS/JS only on Frontend.
 	if (!is_admin()) {
 		
-			wp_enqueue_script( 'jquery-min-js', 'https://code.jquery.com/jquery-3.6.0.min.js', array('jquery'), null, true );
+			wp_enqueue_script( 'jquery-min-js', get_stylesheet_directory_uri() . '/js/jquery.min.js', array('jquery'), null, true );
 			wp_enqueue_script( 'bootstrap-min-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array('jquery-min-js'), null, true );
 			
 			wp_enqueue_script( 'rev-slider', get_stylesheet_directory_uri() . '/js/rev-slider.js', array('jquery'), null, true );
