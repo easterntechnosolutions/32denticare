@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="logo-bottom">
-                    <a href="#">
+                    <a href="<?php echo site_url(); ?>">
                         <?php $logo_desk = get_field('logo', 'option'); ?>
                         <img src="/wp-content/uploads/2024/08/image-30.svg" alt="Logo" title="32 Denti Care" loading="lazy"/>
                     </a>
