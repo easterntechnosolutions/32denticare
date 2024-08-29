@@ -903,35 +903,7 @@ a:active {
 .contact .button-header {
     padding-left: 8.6%;
 }
-#header-baner {
-    height: 420px;
-    position: relative;
-    background-image: url(../image/common/header-baner.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#header-baner .text-banner {
-    position: absolute;
-    top: 140px;
-}
-#header-baner .text-banner .baner-tittle {
-    font-family: "Jost", sans-serif;
-    font-size: 38px;
-    font-weight: bold;
-    line-height: 68.66px;
-    letter-spacing: -0.6px;
-    color: var(--primary-color2);
-}
-#header-baner .baner-content,
-#header-baner .baner-content span {
-    font-family: "Rubik" sans-serif;
-    font-size: 18px;
-    color: var(--primary-color2);
-}
-#header-baner ul {
-    margin: 17% 30%;
-}
+
 .header,
 .header.header-small .contact .top-bar-right {
     -webkit-transition: all 0.3s ease-in-out;
