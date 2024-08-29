@@ -522,6 +522,24 @@ function ah_breadcrumb() {
 }
   
 
+/* Contact Form 7 Shortcode enable in Body Tag. */
+add_filter( 'wpcf7_form_elements', 'do_shortcode' );
+
+function header_special_mail_tag( $output, $name, $html ) {
+	if ( 'email_template_header' == $name )
+		$output = do_shortcode( "[$name]" );
+	return $output;
+}
+add_filter( 'wpcf7_special_mail_tags', 'header_special_mail_tag', 10, 3 );
+
+function footer_special_mail_tag( $output, $name, $html ) {
+	if ( 'email_template_footer' == $name )
+		$output = do_shortcode( "[$name]" );
+	return $output;
+}
+add_filter( 'wpcf7_special_mail_tags', 'footer_special_mail_tag', 10, 3 );
+
+
 add_action('phpmailer_init', 'denti_send_smtp_email');
 function denti_send_smtp_email($phpmailer)
 {
@@ -532,6 +550,6 @@ function denti_send_smtp_email($phpmailer)
     $phpmailer->SMTPAuth = true;
     $phpmailer->Username = 'noreplay.denticare@gmail.com';
     $phpmailer->Password = 'trgbssfcsjrpknof';
-    $phpmailer->From = 'noreplay.denticare@gmail.com';
-    $phpmailer->FromName = '32denticare&implantcenter';
+    $phpmailer->From = 'noreplay.denticare@gmail.com'; // email: noreplay.denticare@gmail.com password: Denticare&456#
+    $phpmailer->FromName = '32 Denticare & Implant Center';
 }
