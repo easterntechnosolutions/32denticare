@@ -68,7 +68,7 @@
                                     <div class="icon-call-us"></div>
                                     <div class="content-call-us">
                                         <p>Call Us</p>
-                                        <a href="tel: +91 9723696993" class="font-bold text-color-title-sidebar">(+91) 9723696993</a>
+                                        <a href="tel:+919723696993" class="font-bold text-color-title-sidebar">(+91) 9723696993</a>
                                     </div>
                                 </div>
                             </div>

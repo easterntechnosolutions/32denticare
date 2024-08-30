@@ -17,12 +17,12 @@
                     <div class="address-bottom">
                         <span><i class="fa fa-phone-alt flat-icon-footer"></i></span><br>
                         <p><b>Phone Number</b></p>
-                        <p><a href="tel:+91 9723696993" style="cursor: pointer;">(+91) 9723696993</a></p>
+                        <p><a href="tel:+919723696993" style="cursor: pointer;">(+91) 9723696993</a></p>
                     </div>
                     <div class="address-bottom">
                         <span><i class="fas fa-envelope flat-icon-footer"></i></span><br>
                         <p><b>Email</b></p>
-                        <p><a href="mailto: 32denticareimplantcenter@gmail.com" style="cursor: pointer;">32denticareimplantcenter@gmail.com</a></p>
+                        <p><a href="mailto:32denticareimplantcenter@gmail.com" style="cursor: pointer;">32denticareimplantcenter@gmail.com</a></p>
                     </div>
                 </div>
             </div>

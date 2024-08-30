@@ -78,23 +78,4 @@
     </div>
 </div>
 
-<style>
-    /* Hide desktop image on screens smaller than 991px */
-    .desktop-image {
-        display: block;
-    }
-
-    @media screen and (max-width: 991px) {
-        .desktop-image {
-            display: none;
-        }
-
-        .mobile-image {
-            display: block;
-        }
-    }
-</style>
-
-
-
 <?php  get_footer(); ?>
